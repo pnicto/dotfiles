@@ -1,0 +1,12 @@
+[Unit]
+Description=airdcppd agent
+Requires=mount.target
+After=mount.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/airdcppd
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

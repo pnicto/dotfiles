@@ -1,0 +1,12 @@
+[Unit]
+Description=IMWheel
+After=display-manager.service
+
+[Service]
+Type=simple
+Environment=XAUTHORITY=%h/.Xauthority
+ExecStart=/usr/bin/imwheel -d
+Restart=always
+
+[Install]
+WantedBy=default.target
