@@ -8,7 +8,12 @@ if true then
         styles = { keywords = "bold" },
       },
     },
-    { "fladson/vim-kitty" },
+    {
+      "rcarriga/nvim-notify",
+      opts = {
+        background_colour = "#000000",
+      },
+    },
   }
 end
 
@@ -115,7 +120,7 @@ return {
       init = function()
         require("lazyvim.util").on_attach(function(_, buffer)
           -- stylua: ignore
-          vim.keymap.set( "n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
+          vim.keymap.set("n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
           vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { desc = "Rename File", buffer = buffer })
         end)
       end,
