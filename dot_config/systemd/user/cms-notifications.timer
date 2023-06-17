@@ -1,0 +1,10 @@
+[Unit]
+Description=CMS update notifier that runs periodically (15 mins) to show new announcements
+
+[Timer]
+; change the value here to set the period
+OnCalendar=*:0/15
+Persistent=true
+ 
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=CMS notifications service
+
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+ExecStart=%h/.local/bin/scripts/cms.sh
+EnvironmentFile=%h/.local/bin/scripts/.env
+
+[Install]
+WantedBy=cms-notificattions.timer
