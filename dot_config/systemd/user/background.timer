@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer to change background every 30 mins with feh
+
+[Timer]
+OnCalendar=*:0/30
+Persistent=true
+ 
+[Install]
+WantedBy=timers.target
