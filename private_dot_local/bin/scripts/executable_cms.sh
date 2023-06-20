@@ -9,11 +9,9 @@ notifications_count=$(curl --silent -X POST "$url" | jq -r '.unreadcount')
 # to get notifications I don't remember but I had to do this
 XDG_RUNTIME_DIR=/run/user/$(id -u)
 
-if (($notifications_count > 0)); then
+if ((notifications_count > 0)); then
 	dunstify "CMS" "You have $notifications_count notifications" -u critical
 	echo "CMS $notifications_count"
 else
 	echo ""
 fi
-
-# for polybar
