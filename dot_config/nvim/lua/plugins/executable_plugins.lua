@@ -14,6 +14,7 @@ if true then
         background_colour = "#000000",
       },
     },
+    { "echasnovski/mini.pairs", enabled = false },
   }
 end
 
