@@ -15,6 +15,7 @@ map("i", "jk", "<Esc>")
 map("i", "kj", "<Esc>")
 map("i", "JK", "<Esc>")
 map("i", "KJ", "<Esc>")
+map("n", "<C-f>", ":silent !tmux neww tmux-sessionizer.sh<CR>")
 
 -- yank to system clipboard
 map({ "v", "n" }, "<leader>y", '"+y')
