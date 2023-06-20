@@ -746,6 +746,9 @@ key_bindings:
   - { key: H,   mods: Alt, chars: "\x02\x6e" }
   - { key: W,   mods: Alt, chars: "\x02\x26" }
   - { key: R,   mods: Alt, chars: "\x02\x52" }
+  - { key: J,   mods: Alt, chars: "\x02\x28" }
+  - { key: K,   mods: Alt, chars: "\x02\x29" }
+  - { key: U,   mods: Alt, chars: "\x02\x7a" }
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
