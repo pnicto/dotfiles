@@ -120,6 +120,8 @@ export GOPATH=~/go/
 alias vi=nvim
 alias conf=chezmoi
 alias c="code ."
+alias cst="chezmoi status"
+alias ccd="chezmoi cd"
 alias v="nvim ."
 alias xc="xclip -selection clipboard"
 alias sshk="kitty +kitten ssh"
@@ -146,6 +148,7 @@ echo -e "$BLUE"-----------------------------------------------------------------
 
 
 bindkey -s ^f "kitty-cd\n"
+bindkey -s "^[f" "~/.local/bin/scripts/tmux-sessionizer.sh\n"
 
 kitty-cd ()
 {
