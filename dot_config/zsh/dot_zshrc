@@ -149,6 +149,7 @@ echo -e "$BLUE"-----------------------------------------------------------------
 
 bindkey -s ^f "kitty-cd\n"
 bindkey -s "^[f" "~/.local/bin/scripts/tmux-sessionizer.sh\n"
+bindkey -s "^[i" "tmux neww cheat.sh\n"
 
 kitty-cd ()
 {
