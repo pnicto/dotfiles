@@ -1,0 +1,10 @@
+[Default Applications]
+inode/directory=thunar.desktop;
+x-scheme-handler/http=microsoft-edge.desktop
+x-scheme-handler/https=microsoft-edge.desktop
+application/pdf=org.gnome.Evince.desktop
+x-scheme-handler/postman=Postman.desktop
+
+[Added Associations]
+application/pdf=org.gnome.Evince.desktop;
+text/plain=nvim.desktop;
