@@ -5,7 +5,10 @@ if true then
       opts = {
         transparent = true,
         style = "storm",
-        styles = { keywords = "bold" },
+        styles = {
+          comments = { italic = true },
+          keyword = { bold = true },
+        },
       },
     },
     {
