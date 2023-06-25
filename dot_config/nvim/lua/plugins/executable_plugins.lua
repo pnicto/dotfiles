@@ -7,7 +7,7 @@ if true then
         style = "storm",
         styles = {
           comments = { italic = true },
-          keyword = { bold = true },
+          keyword = { bold = true, italic = true },
         },
       },
     },

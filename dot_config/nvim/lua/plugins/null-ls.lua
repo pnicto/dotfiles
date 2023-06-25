@@ -1,6 +1,3 @@
-if true then
-  return {}
-end
 return {
   {
     "jose-elias-alvarez/null-ls.nvim",
@@ -16,6 +13,9 @@ return {
       opts.sources = vim.list_extend(opts, { null_ls.builtins.formatting.isort })
       opts.sources = vim.list_extend(opts, { null_ls.builtins.diagnostics.ruff })
       opts.sources = vim.list_extend(opts, { null_ls.builtins.formatting.sql_formatter })
+      opts.sources = vim.list_extend(opts, { null_ls.builtins.formatting.gofumpt })
+      opts.sources = vim.list_extend(opts, { null_ls.builtins.formatting.goimports })
+      opts.sources = vim.list_extend(opts, { null_ls.builtins.diagnostics.golangci_lint })
     end,
   },
 }
