@@ -125,22 +125,22 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: "VictorMono Nerd Font"
+    family: "JetBrainsMono Nerd Font"
     style: Regular
 
   italic:
-    family: "VictorMono Nerd Font"
+    family: "JetBrainsMono Nerd Font"
     style: Italic
 
   bold:
-    family: "VictorMono Nerd Font"
+    family: "JetBrainsMono Nerd Font"
     style: Bold
 
   bold_italic:
-    family: "VictorMono Nerd Font"
+    family: "JetBrainsMono Nerd Font"
     style: Bold Italic
 
-  size: 9
+  size: 8.5
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
