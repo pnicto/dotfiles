@@ -21,4 +21,4 @@ File names are different from usual because of chezmoi.
 
 # TODO
 
-*   Add screenshots, keybindings, commands that are useful, usage of scripts like cms.sh
+*   Add keybindings, commands that are useful, usage of scripts like cms.sh

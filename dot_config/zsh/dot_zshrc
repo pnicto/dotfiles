@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+# careful about this
+export GITHUB_TOKEN=$(cat ~/.config/zsh/.github_token)
 export EDITOR="nvim"
 export BROWSER="microsoft-edge-stable"
 export GOPATH=~/go/
@@ -129,6 +131,8 @@ alias wp="wgetpaste -s sprunge"
 alias o="xdg-open"
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 alias pn=pnpm
+alias lg=lazygit
+alias sshconf="$EDITOR ~/.ssh/config"
 alias pcinfo='date;echo;cal;echo -e "$BLUE"------------------------------------------------------$NULL;
 df -h;
 echo -e "$BLUE"-------------------------------------------------------------------------$NULL;
@@ -155,6 +159,27 @@ kitty-cd ()
 {
     session_dir=$(find ~ ~/programs/ ~/work/ ~/learning/ ~/playground/ ~/.local/bin/ ~/.config/ "/run/media/hans/OS/Users/ydkr7/College/Sem 4/" -mindepth 1 -maxdepth 1 -type d | fzf)
     cd $session_dir
+}
+
+init-repo ()
+{
+  if [[ $# -eq 0 ]]; then
+    echo "Usage: init-repo <visibility> <name>"
+    return 1
+  fi
+
+  repo_name="$1"
+  visibility="public"
+
+  if [[ "$1" == "--private" ]]; then
+   visibility="private"
+   shift
+   repo_name="$1"
+  fi
+
+  gh repo create "$repo_name" "--$visibility" &&
+  git clone git@github.com:pnicto/"$repo_name".git &&
+  cd "$repo_name" || exit
 }
 
 # To keep home dir clean
