@@ -126,13 +126,13 @@ alias cst="chezmoi status"
 alias ccd="chezmoi cd"
 alias v="nvim ."
 alias xc="xclip -selection clipboard"
-alias sshk="kitty +kitten ssh"
 alias wp="wgetpaste -s sprunge"
 alias o="xdg-open"
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 alias pn=pnpm
 alias lg=lazygit
 alias sshconf="$EDITOR ~/.ssh/config"
+alias zshconf="$EDITOR ~/.config/zsh/.zshrc"
 alias pcinfo='date;echo;cal;echo -e "$BLUE"------------------------------------------------------$NULL;
 df -h;
 echo -e "$BLUE"-------------------------------------------------------------------------$NULL;
