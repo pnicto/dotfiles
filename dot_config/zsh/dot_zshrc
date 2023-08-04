@@ -122,8 +122,6 @@ export GOPATH=~/go/
 alias vi=nvim
 alias conf=chezmoi
 alias c="code ."
-alias cst="chezmoi status"
-alias ccd="chezmoi cd"
 alias v="nvim ."
 alias xc="xclip -selection clipboard"
 alias wp="wgetpaste -s sprunge"
@@ -144,6 +142,9 @@ ps;
 echo -e "$BLUE"-------------------------------------------------------------------------------------$NULL;
 '
 
+# chezmoi
+alias cst="chezmoi status"
+alias ccd="chezmoi cd"
 
 # alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
