@@ -1,6 +1,6 @@
 #!/bin/bash
 
-session_dir=$(find ~ ~/programs/ ~/work/ ~/learning/ ~/playground/ ~/.local/bin/ ~/.config/ "/run/media/hans/OS/Users/ydkr7/College/Sem 4/" -mindepth 1 -maxdepth 1 -type d | fzf)
+session_dir=$(find ~ ~/programs/ ~/work/ ~/learning/ ~/playground/ ~/.local/bin/ ~/.config/ ~/college/ -mindepth 1 -maxdepth 1 -type d | fzf)
 exit_status=$?
 session_name=$(basename "$session_dir" | tr . _)
 
