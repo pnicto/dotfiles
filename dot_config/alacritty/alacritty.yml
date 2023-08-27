@@ -740,16 +740,41 @@ mouse_bindings:
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
 key_bindings:
-  - { key: N, mods: Control|Shift, action: SpawnNewInstance }
+  # - { key: N, mods: Control|Shift, action: SpawnNewInstance }
+  # ctrl + b, ""
   - { key: V, mods: Alt, chars: "\x02\x22" }
+  # ctrl + b, %
+  - { key: S, mods: Alt, chars: "\x02\x25" }
+  # ctrl + b, c
   - { key: N, mods: Alt, chars: "\x02\x63" }
+  # ctrl + b, p
   - { key: H, mods: Alt, chars: "\x02\x70" }
+  # ctrl + b, n
   - { key: L, mods: Alt, chars: "\x02\x6e" }
+  # ctrl + b, &
   - { key: W, mods: Alt, chars: "\x02\x26" }
+  # ctrl + b, R
   - { key: R, mods: Alt, chars: "\x02\x52" }
+  # ctrl + b, (
   - { key: J, mods: Alt, chars: "\x02\x28" }
+  # ctrl + b, )
   - { key: K, mods: Alt, chars: "\x02\x29" }
-  - { key: U, mods: Alt, chars: "\x02\x7a" }
+  # ctrl + b, z
+  - { key: Z, mods: Alt, chars: "\x02\x7a" }
+  # ctrl + b, !
+  - { key: Q, mods: Alt, chars: "\x02\x21" }
+  # ctrl + b, up
+  - { key: Up, mods: Alt, chars: "\x02\x1b\x5b\x41" }
+  # ctrl + b, down
+  - { key: Down, mods: Alt, chars: "\x02\x1b\x5b\x42" }
+  # ctrl + b, left
+  - { key: Left, mods: Alt, chars: "\x02\x1b\x5b\x44" }
+  # ctrl + b, right
+  - { key: Right, mods: Alt, chars: "\x02\x1b\x5b\x43" }
+  - { key: Up, mods: Alt|Shift, chars: "\x02\x1b\x5b\x31\x3b\x35\x41" }
+  - { key: Down, mods: Alt|Shift, chars: "\x02\x1b\x5b\x31\x3b\x35\x42" }
+  - { key: Left, mods: Alt|Shift, chars: "\x02\x1b\x5b\x31\x3b\x35\x44" }
+  - { key: Right, mods: Alt|Shift, chars: "\x02\x1b\x5b\x31\x3b\x35\x43" }
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
