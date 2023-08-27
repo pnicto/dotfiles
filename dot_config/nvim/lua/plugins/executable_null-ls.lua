@@ -16,6 +16,7 @@ return {
       opts.sources = vim.list_extend(opts, { null_ls.builtins.formatting.gofumpt })
       opts.sources = vim.list_extend(opts, { null_ls.builtins.formatting.goimports })
       opts.sources = vim.list_extend(opts, { null_ls.builtins.diagnostics.golangci_lint })
+      opts.sources = vim.list_extend(opts, { null_ls.builtins.diagnostics.shellcheck })
     end,
   },
 }
