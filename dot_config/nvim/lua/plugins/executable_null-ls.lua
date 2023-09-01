@@ -6,7 +6,7 @@ return {
     opts = function(_, opts)
       local null_ls = require("null-ls")
 
-      opts.sources = vim.list_extend(opts, { null_ls.builtins.formatting.beautysh })
+      opts.sources = vim.list_extend(opts, { null_ls.builtins.formatting.shfmt })
       opts.sources = vim.list_extend(opts, { null_ls.builtins.formatting.stylua })
       opts.sources = vim.list_extend(opts, { null_ls.builtins.formatting.prettier })
       opts.sources = vim.list_extend(opts, { null_ls.builtins.formatting.black })
