@@ -775,6 +775,12 @@ key_bindings:
   - { key: Down, mods: Alt|Shift, chars: "\x02\x1b\x5b\x31\x3b\x35\x42" }
   - { key: Left, mods: Alt|Shift, chars: "\x02\x1b\x5b\x31\x3b\x35\x44" }
   - { key: Right, mods: Alt|Shift, chars: "\x02\x1b\x5b\x31\x3b\x35\x43" }
+  - { key: H, mods: Alt|Shift, chars: "\x02\x1b\x5b\x44" }
+  - { key: L, mods: Alt|Shift, chars: "\x02\x1b\x5b\x43" }
+  - { key: J, mods: Alt|Shift, chars: "\x02\x1b\x5b\x41" }
+  - { key: K, mods: Alt|Shift, chars: "\x02\x1b\x5b\x42" }
+  - { key: Z, mods: Alt|Shift, chars: "\x02\x3b" }
+  - { key: Q, mods: Alt|Shift, chars: "\x02\x78" }
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
