@@ -10,6 +10,7 @@ filetype plugin indent on
 set clipboard=unnamed
 syntax on
 set termguicolors
+colorscheme torte
 
 " set leader
 let mapleader=" "
@@ -37,7 +38,7 @@ nnoremap <S-k> <C-u>zz
 " open netrw
 nnoremap <leader>e :Lexplore<CR>
 " open config
-nnoremap <leader>c :e ~/.config/vanila-nvim/init.vim<CR> 
+nnoremap <leader>c :e ~/.config/vanilla-nvim/init.vim<CR> 
 " reload config
 nnoremap <leader>R :source ~/.config/vanilla-nvim/init.vim<CR>
 
