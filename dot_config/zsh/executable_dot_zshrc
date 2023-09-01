@@ -135,6 +135,7 @@ alias o="xdg-open"
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 alias pn=pnpm
 alias lg=lazygit
+alias nv="NVIM_APPNAME=vanilla-nvim nvim"
 alias sshconf="$EDITOR ~/.ssh/config"
 alias zshconf="$EDITOR ~/.config/zsh/.zshrc"
 alias pcinfo='date;echo;cal;echo -e "$BLUE"------------------------------------------------------$NULL;
