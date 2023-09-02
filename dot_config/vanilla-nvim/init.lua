@@ -223,6 +223,8 @@ vim.cmd.colorscheme "torte"
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
+vim.o.tabstop = 2
+
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
@@ -277,6 +279,9 @@ vim.keymap.set('n', '<S-h>', ':bp<CR>', { silent = true })
 -- Page down
 vim.keymap.set('n', '<S-j>', '<C-d>zz')
 vim.keymap.set('n', '<S-k>', '<C-u>zz')
+
+-- Run c code
+vim.keymap.set('n', '<leader>rr', ':!gcc % && ./a.out<CR>')
 
 vim.g.netrw_winsize=20
 vim.g.netrw_liststyle=3
