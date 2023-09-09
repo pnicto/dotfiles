@@ -1,7 +1,7 @@
 [Default Applications]
 inode/directory=thunar.desktop;
-x-scheme-handler/http=microsoft-edge.desktop
-x-scheme-handler/https=microsoft-edge.desktop
+x-scheme-handler/http=microsoft-edge-dev.desktop
+x-scheme-handler/https=microsoft-edge-dev.desktop
 application/pdf=org.gnome.Evince.desktop
 x-scheme-handler/postman=Postman.desktop
 image/jpeg=org.nomacs.ImageLounge.desktop
