@@ -15,7 +15,7 @@ for key in "${!dict[@]}"; do
 	arr+=("${key}")
 done
 
-selected=$(echo "${arr[@]}" | sed 's/\s/\n/g' | rofi -dmenu)
+selected=$(echo "${arr[@]}" | sed 's/\s/\n/g' | rofi -dmenu -config ~/.config/rofi/arc_dark_transparent_colors.rasi)
 
 if [[ "$selected" != "" ]]; then
 	if [[ "${dict[$selected]}" != "" ]]; then
