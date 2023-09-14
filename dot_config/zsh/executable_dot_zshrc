@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 # careful about this
-export GITHUB_TOKEN=$(cat ~/.config/zsh/.github_token)
+export GITHUB_TOKEN=$(cat ~/.config/zsh/.env)
 export EDITOR="nvim"
 export BROWSER="microsoft-edge-dev"
 export GOPATH=~/go/
