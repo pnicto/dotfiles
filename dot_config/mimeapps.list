@@ -5,6 +5,7 @@ x-scheme-handler/https=microsoft-edge-dev.desktop
 application/pdf=org.gnome.Evince.desktop
 x-scheme-handler/postman=Postman.desktop
 image/jpeg=org.nomacs.ImageLounge.desktop
+x-scheme-handler/webcal=microsoft-edge-dev.desktop
 
 [Added Associations]
 application/pdf=org.gnome.Evince.desktop;
