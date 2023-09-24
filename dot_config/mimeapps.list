@@ -13,4 +13,4 @@ text/plain=nvim.desktop;
 application/json=nvim.desktop;
 image/png=org.nomacs.ImageLounge.desktop;
 image/jpeg=gimp.desktop;org.nomacs.ImageLounge.desktop;
-image/gif=org.gnome.gThumb.desktop;
+image/gif=org.nomacs.ImageLounge.desktop;org.gnome.gThumb.desktop;
