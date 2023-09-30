@@ -130,6 +130,7 @@ alias conf=chezmoi
 alias c="code ."
 alias v="nvim ."
 alias xc="xclip -selection clipboard"
+alias vm="asdf"
 alias wp="wgetpaste -s sprunge"
 alias o="xdg-open"
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
