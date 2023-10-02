@@ -1,5 +1,6 @@
 if true then
   return {
+
     {
       "folke/tokyonight.nvim",
       opts = {
@@ -18,7 +19,7 @@ if true then
       },
     },
     { "echasnovski/mini.pairs", enabled = false },
-    { "folke/noice.nvim", enabled = false },
+    { "folke/noice.nvim",       enabled = false },
     {
       "neovim/nvim-lspconfig",
       opts = {
@@ -58,7 +59,7 @@ return {
   },
 
   -- disable trouble
-  { "folke/trouble.nvim", enabled = false },
+  { "folke/trouble.nvim",      enabled = false },
 
   -- add symbols-outline
   {
