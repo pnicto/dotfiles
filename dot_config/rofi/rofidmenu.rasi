@@ -11,6 +11,7 @@ configuration {
     scroll-method:       0;
     disable-history:     false;
     sidebar-mode:        false;
+    modes:               "window,drun,run,ssh,calc";
 }
 
 @import "~/.config/rofi/arc_dark_transparent_colors.rasi"
