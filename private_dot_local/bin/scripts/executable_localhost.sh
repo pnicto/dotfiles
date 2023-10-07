@@ -4,7 +4,7 @@ declare -A dict
 arr=()
 
 dict[komga]=8443
-dict[dc]=5600
+dict[dc]=5700
 dict[3000]=3000
 dict[5173]=5173
 dict[8080]=8080
