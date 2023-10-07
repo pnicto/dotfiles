@@ -3,12 +3,13 @@
 declare -A dict
 arr=()
 
-dict[komga]=8443
-dict[dc]=5700
 dict[3000]=3000
 dict[5173]=5173
 dict[8080]=8080
 dict[9000]=9000
+dict[aw]=5600
+dict[dc]=5700
+dict[komga]=8443
 dict[syncthing]=8384
 
 for key in "${!dict[@]}"; do
