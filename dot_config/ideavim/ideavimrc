@@ -46,3 +46,9 @@ nmap L :action NextTab<CR>
 set NERDTree
 map gh <Action>(ShowErrorDescription)
 map <leader>rr <Action>(Run)
+set ignorecase
+set smartcase
+
+""" Go to next errors
+nnoremap ]d :action GotoNextError<CR>
+nnoremap [d :action GotoPreviousError<CR>
