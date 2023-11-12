@@ -19,3 +19,4 @@ map("n", "<A-f>", ":silent !tmux neww tmux-sessionizer.sh<CR>")
 
 -- yank to system clipboard
 map({ "v", "n" }, "<leader>y", '"+y')
+map("v", "y", "ygv<Esc>")
