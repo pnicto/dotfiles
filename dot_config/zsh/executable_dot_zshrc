@@ -11,7 +11,7 @@ PATH=$PATH:/home/hans/.local/bin/scripts:/home/hans/go/bin
 
 # Path to your oh-my-zsh installation.
 # export ZSH="$HOME/.oh-my-zsh"
-export ZSH="$XDG_DATA_HOME"/oh-my-zsh
+export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS
@@ -107,7 +107,6 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 # careful about this
-export GITHUB_TOKEN=$(cat ~/.config/zsh/.env)
 export EDITOR="nvim"
 export BROWSER="microsoft-edge-dev"
 export GOPATH=~/go/
@@ -203,3 +202,6 @@ case ":$PATH:" in
     *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# opam configuration
+[[ ! -r /home/hans/.opam/opam-init/init.zsh ]] || source /home/hans/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
