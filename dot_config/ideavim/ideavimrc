@@ -42,6 +42,7 @@ map <leader>o <Action>(FileStructurePopup)
 inoremap jk <Esc>
 nmap H :action PreviousTab<CR>
 nmap L :action NextTab<CR>
+vmap y ygv<Esc>
 
 set NERDTree
 map gh <Action>(ShowErrorDescription)
