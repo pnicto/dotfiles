@@ -9,9 +9,11 @@ x-scheme-handler/webcal=microsoft-edge-dev.desktop
 image/png=org.nomacs.ImageLounge.desktop
 
 [Added Associations]
-application/pdf=org.gnome.Evince.desktop;
-text/plain=nvim.desktop;
-application/json=nvim.desktop;
+application/pdf=microsoft-edge-dev.desktop;org.gnome.Evince.desktop;
+text/plain=nvim.desktop;code.desktop;
+application/json=code.desktop;nvim.desktop;
 image/png=org.nomacs.ImageLounge.desktop;
 image/jpeg=gimp.desktop;org.nomacs.ImageLounge.desktop;
 image/gif=org.nomacs.ImageLounge.desktop;org.gnome.gThumb.desktop;
+text/x-python=code.desktop;
+text/csv=code.desktop;
