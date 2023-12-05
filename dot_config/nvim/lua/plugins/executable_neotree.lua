@@ -9,6 +9,9 @@ return {
           hide_gitignored = true,
         },
       },
+      window = {
+        position = "right",
+      },
     },
   },
 }
