@@ -3,9 +3,14 @@
 # shellcheck source=./.env
 source ~/.local/bin/scripts/.env
 
-url="https://cms.bits-hyderabad.ac.in/webservice/rest/server.php?wsfunction=message_popup_get_popup_notifications&moodlewsrestformat=json&wstoken=${CMS_TOKEN}&useridto=9560"
+url="https://cms.bits-hyderabad.ac.in/lib/ajax/service.php?sesskey=${CMS_SESS_KEY}&info=message_popup_get_popup_notifications"
 
-notifications_count=$(curl --insecure --silent -X POST "$url" | jq -r '.unreadcount')
+notifications_count=$(
+	curl --insecure --silent "$url" \
+		--data-raw '[{"index":0,"methodname":"message_popup_get_popup_notifications","args":{"limit":20,"offset":0,"useridto":9560}}]' \
+		-H "cookie: MoodleSession=${CMS_COOKIE};" |
+		jq -r '.[].data.unreadcount'
+)
 
 # to get notifications I don't remember but I had to do this
 XDG_RUNTIME_DIR=/run/user/$(id -u)
