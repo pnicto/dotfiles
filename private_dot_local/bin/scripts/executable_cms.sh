@@ -18,4 +18,3 @@ if ((notifications_count > 0)); then
 else
 	echo "CMS $notifications_count"
 fi
-
