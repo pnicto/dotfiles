@@ -1,0 +1,18 @@
+{
+  "codeforces starter": {
+    "prefix": "cc",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "",
+      "using namespace std;",
+      "",
+      "int main() {",
+      "\t$1",
+      "\tint t;",
+      "\tcin >> t;",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "codeforces starter snippet"
+  }
+}

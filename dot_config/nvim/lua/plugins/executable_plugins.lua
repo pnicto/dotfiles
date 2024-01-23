@@ -18,7 +18,7 @@ return {
     },
   },
   { "echasnovski/mini.pairs", enabled = false },
-  { "folke/noice.nvim",       enabled = false },
+  { "folke/noice.nvim", enabled = false },
   {
     "neovim/nvim-lspconfig",
     opts = {
@@ -29,5 +29,12 @@ return {
       },
     },
   },
-  { "ActivityWatch/aw-watcher-vim" }
+  { "ActivityWatch/aw-watcher-vim" },
+  {
+    "xeluxee/competitest.nvim",
+    dependencies = "MunifTanjim/nui.nvim",
+    config = function()
+      require("competitest").setup()
+    end,
+  },
 }
