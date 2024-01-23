@@ -4,8 +4,7 @@ Description=Background changing feh service
 [Service]
 Type=oneshot
 Environment=DISPLAY=:0
-ExecStart=/bin/bash -c "feh --no-fehbg --bg-fill --randomize  ~/wallpapers"
-"
+ExecStart=/bin/bash -c "feh --no-fehbg --bg-fill --randomize  ~/Pictures/wallpapers"
 
 [Install]
 WantedBy=background.timer
