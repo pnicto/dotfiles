@@ -18,9 +18,9 @@ curl 'http://172.16.0.30:8090/login.xml' \
 
 obsidian &
 
-qbittorrent &
+# qbittorrent &
 
-komga --komga.config-dir="$HOME/.config/komga" --server.port=8443 &
+# komga --komga.config-dir="$HOME/.config/komga" --server.port=8443 &
 
 thunderbird --headless &
 
