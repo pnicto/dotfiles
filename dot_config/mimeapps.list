@@ -7,13 +7,16 @@ x-scheme-handler/postman=Postman.desktop
 image/jpeg=org.nomacs.ImageLounge.desktop
 x-scheme-handler/webcal=microsoft-edge-dev.desktop
 image/png=org.nomacs.ImageLounge.desktop
+image/webp=feh.desktop
 
 [Added Associations]
 application/pdf=microsoft-edge-dev.desktop;org.gnome.Evince.desktop;
 text/plain=nvim.desktop;code.desktop;
-application/json=code.desktop;nvim.desktop;
+application/json=nvim.desktop;code.desktop;
 image/png=org.nomacs.ImageLounge.desktop;
 image/jpeg=gimp.desktop;org.nomacs.ImageLounge.desktop;
 image/gif=org.nomacs.ImageLounge.desktop;org.gnome.gThumb.desktop;
-text/x-python=code.desktop;
+text/x-python=nvim.desktop;code.desktop;
 text/csv=code.desktop;
+text/html=nvim.desktop;
+image/webp=feh.desktop;org.nomacs.ImageLounge.desktop;
