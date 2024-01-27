@@ -203,5 +203,4 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# opam configuration
-[[ ! -r /home/hans/.opam/opam-init/init.zsh ]] || source /home/hans/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
