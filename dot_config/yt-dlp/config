@@ -1,0 +1,10 @@
+-o '~/Videos/ytdlp/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'
+
+-f 'bestvideo[height<=480]+bestaudio/best[height<=480]'
+
+--write-sub
+--sub-lang en
+
+--write-auto-sub
+--sub-format vtt
+--sub-lang en
