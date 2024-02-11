@@ -148,6 +148,7 @@ echo -e "$BLUE"---------------------------$NULL;
 ps;
 echo -e "$BLUE"-------------------------------------------------------------------------------------$NULL;
 '
+alias ytdl=yt-dlp
 
 # chezmoi
 alias cst="chezmoi status"
