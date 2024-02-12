@@ -2,9 +2,6 @@
 
 -f 'bestvideo[height<=480]+bestaudio/best[height<=480]'
 
---write-sub
---sub-lang en
 
---write-auto-sub
---sub-format vtt
---sub-lang en
+--merge-output-format mkv 
+--embed-subs
