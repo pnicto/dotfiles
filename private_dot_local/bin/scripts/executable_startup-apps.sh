@@ -24,10 +24,12 @@ obsidian &
 
 thunderbird --headless &
 
+# rog-control-center &
+
 airdcppd &
 
 sleep 5 && aw-at &
 
-discord --start-minimized &
+# discord --start-minimized &
 
 imwheel -d
