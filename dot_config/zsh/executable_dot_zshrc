@@ -13,13 +13,6 @@ PATH=$PATH:/home/hans/.local/bin/scripts:/home/hans/go/bin
 # export ZSH="$HOME/.oh-my-zsh"
 export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
-setopt HIST_SAVE_NO_DUPS
-setopt HIST_FIND_NO_DUPS
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -136,6 +129,7 @@ alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 alias pn=pnpm
 alias lg=lazygit
 alias nv="NVIM_APPNAME=vanilla-nvim nvim"
+alias sconf="$EDITOR ~/.local/bin/scripts/sessions.json"
 alias sshconf="$EDITOR ~/.ssh/config"
 alias zshconf="$EDITOR ~/.config/zsh/.zshrc"
 alias pcinfo='date;echo;cal;echo -e "$BLUE"------------------------------------------------------$NULL;
@@ -195,6 +189,24 @@ init-repo ()
 export ASDF_DATA_DIR="${XDG_DATA_HOME}"/asdf
 export HISTFILE="${XDG_STATE_HOME}"/zsh/history
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+
+# history related
+HISTSIZE=10000000
+SAVEHIST=10000000
+
+HISTORY_IGNORE="(ls|cd|pwd|exit)*"
+
+setopt EXTENDED_HISTORY      # Write the history file in the ':start:elapsed;command' format.
+setopt INC_APPEND_HISTORY    # Write to the history file immediately, not when the shell exits.
+setopt SHARE_HISTORY         # Share history between all sessions.
+setopt HIST_IGNORE_DUPS      # Do not record an event that was just recorded again.
+setopt HIST_IGNORE_ALL_DUPS  # Delete an old recorded event if a new event is a duplicate.
+setopt HIST_IGNORE_SPACE     # Do not record an event starting with a space.
+setopt HIST_SAVE_NO_DUPS     # Do not write a duplicate event to the history file.
+setopt HIST_VERIFY           # Do not execute immediately upon history expansion.
+setopt APPEND_HISTORY        # append to history file (Default)
+setopt HIST_NO_STORE         # Don't store history commands
+setopt HIST_REDUCE_BLANKS    # Remove superfluous blanks from each command line being added to the history.
 
 # pnpm
 export PNPM_HOME="/home/hans/.local/share/pnpm"
