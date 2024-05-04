@@ -1,0 +1,9 @@
+[Unit]
+Description=Gdrive backup service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/scripts/backup.sh
+
+[Install]
+WantedBy=gdrive-backup.timer
