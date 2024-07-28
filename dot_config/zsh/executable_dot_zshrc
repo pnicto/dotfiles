@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 
 # careful about this
 export EDITOR="nvim"
-export BROWSER="microsoft-edge-dev"
+export BROWSER="microsoft-edge-stable"
 export GOPATH=~/go/
 
 # Compilation flags

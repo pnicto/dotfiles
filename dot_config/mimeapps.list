@@ -1,16 +1,17 @@
 [Default Applications]
 inode/directory=thunar.desktop;
-x-scheme-handler/http=microsoft-edge-dev.desktop
-x-scheme-handler/https=microsoft-edge-dev.desktop
+x-scheme-handler/http=microsoft-edge.desktop
+x-scheme-handler/https=microsoft-edge.desktop
 application/pdf=org.gnome.Evince.desktop
 x-scheme-handler/postman=Postman.desktop
 image/jpeg=org.nomacs.ImageLounge.desktop
-x-scheme-handler/webcal=microsoft-edge-dev.desktop
+x-scheme-handler/webcal=microsoft-edge.desktop
 image/png=org.nomacs.ImageLounge.desktop
 image/webp=feh.desktop
+x-scheme-handler/mailto=microsoft-edge.desktop
 
 [Added Associations]
-application/pdf=microsoft-edge-dev.desktop;org.gnome.Evince.desktop;
+application/pdf=microsoft-edge.desktop;org.gnome.Evince.desktop;
 text/plain=code.desktop;nvim.desktop;
 application/json=nvim.desktop;code.desktop;
 image/png=org.nomacs.ImageLounge.desktop;
