@@ -26,7 +26,7 @@ thunderbird --headless &
 
 # rog-control-center &
 
-# airdcppd &
+airdcppd &
 
 sleep 5 && aw-at &
 
