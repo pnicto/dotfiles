@@ -5,3 +5,4 @@
 
 --merge-output-format mkv 
 --embed-subs
+--embed-chapters
