@@ -174,7 +174,7 @@ init-repo ()
   repo_name="$1"
   visibility="public"
 
-  if [[ "$1" == "--private" ]]; then
+  if [[ "$1" == "private" ]]; then
    visibility="private"
    shift
    repo_name="$1"
@@ -194,7 +194,7 @@ source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 HISTSIZE=10000000
 SAVEHIST=10000000
 
-HISTORY_IGNORE="(ls|cd|pwd|exit)*"
+HISTORY_IGNORE="(ls|cd|pwd|exit|warp-cli|shutdown)*"
 
 setopt EXTENDED_HISTORY      # Write the history file in the ':start:elapsed;command' format.
 setopt INC_APPEND_HISTORY    # Write to the history file immediately, not when the shell exits.
