@@ -143,6 +143,7 @@ ps;
 echo -e "$BLUE"-------------------------------------------------------------------------------------$NULL;
 '
 alias ytdl=yt-dlp
+alias task=go-task
 
 # chezmoi
 alias cst="chezmoi status"
@@ -217,3 +218,7 @@ esac
 # pnpm end
 
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
+
+# task file
+eval "$(go-task --completion zsh)"
+
