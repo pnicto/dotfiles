@@ -1,5 +1,4 @@
 return {
-
   {
     "folke/tokyonight.nvim",
     opts = {
@@ -38,4 +37,5 @@ return {
       require("competitest").setup()
     end,
   },
+  { "tpope/vim-fugitive" },
 }

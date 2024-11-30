@@ -1,3 +1,4 @@
+--restrict-filenames
 -o '~/Videos/ytdlp/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'
 
 -f 'bestvideo[height<=480]+bestaudio/best[height<=480]'
