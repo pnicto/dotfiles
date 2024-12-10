@@ -123,7 +123,7 @@ alias c="code ."
 alias v="nvim ."
 alias xc="xclip -selection clipboard"
 alias vm="asdf"
-alias wp="wgetpaste -s sprunge"
+alias wp="wgetpaste -s 0x0 -C"
 alias o="xdg-open"
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 alias pn=pnpm
@@ -161,14 +161,14 @@ bindkey -s "^[i" "tmux neww cheat.sh\n"
 
 fzf-cd ()
 {
-    session_dir=$(find ~ ~/programs/ ~/work/ ~/learning/ ~/scratch/ ~/.local/bin/ ~/.config/ ~/college/ -mindepth 1 -maxdepth 1 -type d | fzf --cycle --layout=reverse)
+    session_dir=$(find ~ ~/programs/ ~/work/ ~/learning/ ~/scratch/ ~/.local/bin/ ~/.config/ ~/college/ -mindepth 1 -maxdepth 1 -type l,d | fzf --cycle --layout=reverse)
     cd $session_dir
 }
 
 init-repo ()
 {
   if [[ $# -eq 0 ]]; then
-    echo "Usage: init-repo <visibility> <name>"
+    echo "Usage: init-repo [public|private] <name>"
     return 1
   fi
 
