@@ -1,0 +1,27 @@
+[core]
+	editor = nvim
+[user]
+	email = f20210264@hyderabad.bits-pilani.ac.in
+	name = pnicto
+[init]
+	defaultBranch = main
+[pull]
+	ff = only
+	rebase = true
+[rerere]
+	enabled = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
