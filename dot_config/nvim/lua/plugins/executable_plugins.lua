@@ -38,4 +38,5 @@ return {
     end,
   },
   { "tpope/vim-fugitive" },
+  { "folke/which-key.nvim", opts = { preset = "classic" } },
 }
