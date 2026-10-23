@@ -3,7 +3,8 @@
 TERM = "xterm-256color"
 
 [font]
-size = 8.5
+#size = 8.5
+size = 13
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -47,7 +48,7 @@ mods = "Alt"
 
 [[keyboard.bindings]]
 chars = "\u0002c"
-key = "N"
+key = "T"
 mods = "Alt"
 
 [[keyboard.bindings]]
