@@ -83,6 +83,7 @@ plugins=(git ansible archlinux python docker docker-compose npm golang gitignore
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
+export ZSH=$HOME/.local/share/oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -122,16 +123,15 @@ alias conf=chezmoi
 alias c="code ."
 alias v="nvim ."
 alias xc="xclip -selection clipboard"
-alias vm="asdf"
+alias vm="mise"
 alias wp="wgetpaste -s 0x0 -C"
 alias o="xdg-open"
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
-alias pn=pnpm
 alias lg=lazygit
 alias nv="NVIM_APPNAME=vanilla-nvim nvim"
 alias sconf="$EDITOR ~/.local/bin/scripts/sessions.json"
 alias sshconf="$EDITOR ~/.ssh/config"
-alias zshconf="$EDITOR ~/.config/zsh/.zshrc"
+alias zshconf="$EDITOR ~/.config/zsh/.zshrc && source ~/.config/zsh/.zshrc"
 alias pcinfo='date;echo;cal;echo -e "$BLUE"------------------------------------------------------$NULL;
 df -h;
 echo -e "$BLUE"-------------------------------------------------------------------------$NULL;
@@ -190,13 +190,13 @@ init-repo ()
 }
 
 # To keep home dir clean
-export HISTFILE="${XDG_STATE_HOME}"/zsh/history
+export HISTFILE="${XDG_STATE_HOME}/zsh/history"
 
 # history related
 HISTSIZE=10000000
 SAVEHIST=10000000
 
-HISTORY_IGNORE="(ls|cd|pwd|exit|warp-cli|shutdown|fzf-cd)*"
+HISTORY_IGNORE="(pwd|exit|fzf-cd)*"
 
 setopt EXTENDED_HISTORY      # Write the history file in the ':start:elapsed;command' format.
 setopt INC_APPEND_HISTORY    # Write to the history file immediately, not when the shell exits.
@@ -214,7 +214,7 @@ setopt HIST_REDUCE_BLANKS    # Remove superfluous blanks from each command line 
 export PNPM_HOME="/home/hans/.local/share/pnpm"
 case ":$PATH:" in
     *":$PNPM_HOME:"*) ;;
-    *) export PATH="$PNPM_HOME:$PATH" ;;
+    *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
 
