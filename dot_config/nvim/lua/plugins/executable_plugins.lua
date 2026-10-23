@@ -17,7 +17,7 @@ return {
       top_down = false,
     },
   },
-  { "echasnovski/mini.pairs", enabled = false },
+  { "nvim-mini/mini.pairs", enabled = false },
   { "folke/noice.nvim", enabled = false },
   {
     "neovim/nvim-lspconfig",
