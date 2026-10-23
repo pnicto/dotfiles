@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-i3lock -f -p default -e -i "$(find ~/Pictures/wallpapers -type f | shuf -n1)"
+image_path=$(find ~/Pictures/wallpapers/lock_screen -type f | shuf -n1)
+
+i3lock -f -p default -e -i "$image_path"
